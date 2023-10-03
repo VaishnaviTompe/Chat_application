@@ -1,0 +1,154 @@
+
+.form-control {
+  width: 70%;
+  margin-left: 14%;
+}
+label{
+  color: black;
+}
+form{
+  margin-left: 60%;
+  margin-right: 10%;
+  margin-top: 10%;
+  border: 2px solid white;
+}
+
+.card-window {
+  margin: auto;
+  margin-top: 5%;
+  width: 300px;
+  height: 420px;
+}
+ p {
+  margin: 0;
+}
+.chat-header {
+  height: 45px;
+  background: #263238;
+  position: relative;
+  cursor: pointer;
+}
+ .chat-header p {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+
+ .card-body {
+  height: calc(450px - (45px + 70px));
+  background: #fff;
+
+  position: relative;
+}
+.card-body .message-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.card-body .message-container::-webkit-scrollbar {
+  display: none;
+} 
+
+
+ .card-body .message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.card-body .message .message-content {
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 120px;
+  background-color: #43a047;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#you {
+  justify-content: flex-start;
+}
+
+#you .message-content {
+  justify-content: flex-start;
+}
+
+#you .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other {
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
+
+#other .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+ .card-body .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+.card-window .card-footer {
+  height: 40px;
+  border-top: none;
+  display: flex;
+}
+
+.card-window .card-footer input {
+  height: 120%;
+  flex: 85%;
+  border: 0;
+  padding: 0 0.7em;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+
+  outline:none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card-window .card-footer .full {
+  border: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex: 15%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 30px;
+  color: rgb(98, 130, 233);
+}
+
+.card-window .card-footer button:hover {
+  color: #43a047;
+}
+.hide {
+  opacity: 0 !important;
+}  
